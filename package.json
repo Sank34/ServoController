@@ -1,0 +1,16 @@
+{
+  "name": "ServoController",
+  "productName": "ServoController",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "sanki",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "20.0.0-beta.9"
+  }
+}
