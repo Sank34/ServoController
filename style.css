@@ -1,1 +1,122 @@
-/* Empty */
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300,400,500,700&display=swap');
+
+:root {
+    --main-color: #6edb9a;
+    --blue: #4d8e50;
+    --blue-dark: #18293c;
+    --orange: #ffa500;
+    --green-yellow: #8cff00;
+    --pink-light: #7be08c;
+    --cyan-light: #5ae4dd;
+    --white: #fff;
+    --white-alpha-40: rgba(255,255,255, 0.40);
+    --white-alpha-25: rgba(255,255,255, 0.25);
+    --backdrop-filter-blur: blur(20px);
+  }
+
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+::before,
+::after {
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+  }
+  h1,h2{
+    font-weight: 600;
+  }
+  h3,h4,h5,h6{
+    font-weight: 500;
+  }
+  
+  img{
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+
+.content{
+    background-color:  var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    min-height: 90vh;
+    border-radius: 30px;
+    backdrop-filter: var(--backdrop-filter-blur);
+    margin: 20px;
+  }
+
+.content .title-logo{
+    width: 425.62px;
+    height: 99.24px;
+    left: 61px;
+    top: 52px;
+    background-color: #6edb9a;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+}
+
+.content .title-logo h1{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.content .menu-btn{
+    width: 139.09px;
+    height: 109.15px;
+    background-color: #4d8e50;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    float: right;
+}
+
+.content .menu-btn .line1{
+
+    width: 101px;
+    height: 13px;
+    border-radius: 10px;
+    align-items: center;
+    margin: 20px;
+    background-color: #5ae4dd;
+    z-index: 100;
+}
+
+.content .menu-btn .line2{
+
+    width: 101px;
+    height: 13px;
+    border-radius: 10px;
+    align-items: center;
+    margin: 30px;
+    background-color: #5ae4dd;
+    z-index: 100;
+}
+
+.content .menu-btn .line3{
+position: fixed;
+    width: 101px;
+    height: 13px;
+    border-radius: 20px;
+    align-items: center;
+    margin: 10px;
+    background-color: #5ae4dd;
+    z-index: 100;
+}
