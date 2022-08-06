@@ -68,6 +68,7 @@ a{
     margin: 20px;
     text-align: center;
     display: flex;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
 }
 
 .content .title-logo h1{
@@ -76,47 +77,52 @@ a{
     padding: 10px;
 }
 
-.content .menu-btn{
-    width: 139.09px;
-    height: 109.15px;
+.toggle{
+    width: 120.09px;
+    height: 105.15px;
     background-color: #4d8e50;
     position: fixed;
     top: 20px;
     right: 20px;
     margin: 20px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0, 0.8);
     border-radius: 20px;
-    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.toggle span{
+  position: absolute;
+  width: 90px;
+  height: 4px;
+  background: #1863ff;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.toggle span:nth-child(1){
+  transform: translateY(-15px);
+  width: 60px;
+  left: 15px;
+}
+.toggle.active span:nth-child(1){
+  width: 40px;
+  transform: translateY(0) rotate(45deg);
+  transition-delay: 0.125s;
 }
 
-.content .menu-btn .line1{
-
-    width: 101px;
-    height: 13px;
-    border-radius: 10px;
-    align-items: center;
-    margin: 20px;
-    background-color: #5ae4dd;
-    z-index: 100;
+.toggle span:nth-child(2){
+  transform: translateY(15px);
+  width: 75px;
+  left: 15px;
 }
-
-.content .menu-btn .line2{
-
-    width: 101px;
-    height: 13px;
-    border-radius: 10px;
-    align-items: center;
-    margin: 30px;
-    background-color: #5ae4dd;
-    z-index: 100;
+.toggle.active span:nth-child(2){
+  width: 40px;
+  transform: translateY(0) rotate(315deg);
+  transition-delay: 0.25s;
 }
-
-.content .menu-btn .line3{
-position: fixed;
-    width: 101px;
-    height: 13px;
-    border-radius: 20px;
-    align-items: center;
-    margin: 10px;
-    background-color: #5ae4dd;
-    z-index: 100;
+.toggle.active span:nth-child(3){
+  transform:  translateX(60px);
 }
