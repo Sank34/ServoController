@@ -52,7 +52,7 @@ a{
 .content{
     background-color:  var(--white-alpha-25);
     border: 1px solid var(--white-alpha-40);
-    min-height: 90vh;
+    min-height: calc(100vh - 40px);
     border-radius: 30px;
     backdrop-filter: var(--backdrop-filter-blur);
     margin: 20px;
@@ -65,10 +65,34 @@ a{
     top: 52px;
     background-color: #6edb9a;
     border-radius: 20px;
-    margin: 20px;
+    margin: 40px;
     text-align: center;
     display: flex;
     box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+}
+
+.content .menu{
+  width: 300px;
+  height: 100px;
+    background-color: #4d8e50;
+    position: fixed;
+    top: 20px;
+    right: 120px;
+    margin: 20px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 80%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    opacity: 0.0;
+    transition: cubic-bezier(0, 0, 0.82,-0.11) 500ms;
+}
+
+.content .menu.active{
+  opacity: 1.0;
 }
 
 .content .title-logo h1{
