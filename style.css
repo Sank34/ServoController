@@ -91,6 +91,18 @@ a{
     transition: cubic-bezier(0, 0, 0.82,-0.11) 500ms;
 }
 
+.content .menu a{
+  text-decoration: none;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: #4d8e50;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .content .menu.active{
   opacity: 1.0;
 }
